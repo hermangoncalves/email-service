@@ -102,3 +102,46 @@ pnpm run test
 ## ⚠️ Notas
 
 * **Gmail:** Use um App Password para autenticação. Ative a verificação em duas etapas e gere um App Password na sua conta Google.
+
+## ✅ Checklist de Implementações para Estudo
+
+### 🧩 Funcionalidades Essenciais
+- [ ] Autenticação e autorização (JWT ou API Key, roles)
+- [ ] Validação e sanitização de payloads (e-mails, HTML, anexos)
+- [ ] Sistema de filas para envio assíncrono
+- [ ] Failover entre provedores com base em saúde, custo e latência
+- [ ] Suporte a opt-out (unsubscribe link e endpoint)
+- [ ] Suporte a anexos com limite de tamanho
+
+### 🔐 Segurança
+- [ ] Gerenciamento seguro de credenciais (.env → gerenciador de segredos)
+- [ ] Rate limiting por IP/usuário (Fastify Rate Limit)
+- [ ] Auditoria de dependências (npm audit, Snyk)
+- [ ] Forçar HTTPS (SSL/TLS)
+
+### ⚙️ Escalabilidade e Performance
+- [ ] Docker e Docker Compose para ambiente local
+- [ ] Suporte a múltiplas instâncias (Redis compartilhado)
+
+### 🧪 Testes
+- [ ] Testes unitários com cobertura >80%
+- [ ] Testes de integração com simulação de falhas
+
+### 📈 Monitoramento e Logging
+- [ ] Logging estruturado com Pino
+- [ ] Métricas com Prometheus + visualização em Grafana
+- [ ] Suporte a webhooks de status de envio (entregue, rejeitado, aberto)
+
+### 📘 Documentação
+- [ ] API documentada com Swagger (exemplos de payloads e respostas)
+- [ ] Guia de configuração para cada provedor no README
+- [ ] Site de documentação pública com Docusaurus ou MkDocs
+
+### 🚀 Implantação
+- [ ] Pipeline CI/CD com GitHub Actions
+- [ ] Deploy local com Docker Compose
+- [ ] Deploy em nuvem
+
+### 🧑‍💻 Experiência do Usuário
+- [ ] Painel de administração (React ou Vue) com visualização e envio
+
